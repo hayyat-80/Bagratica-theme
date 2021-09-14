@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bagratica</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+<body>
+    <!-- all overlays -->
+    <div id="myOverlay" class="overlay">
+        <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+        <div class="overlay-content">
+            <input type="text" placeholder="Search.." name="search">
+        </div>
+    </div>
+    
+    <div id="mycartOverlay" class="cartoverlay">
+        <div class="cartoverlay-content">
+            <div class="cartmsg">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="cart">
+                <a href="#">CONTINUE SHOPPING</a> 
+            </div>
+        </div>
+    </div>
+
+    <div id="mystyleOverlay" class="styleoverlay">
+        <span class="closebtn" onclick="closestyle()" title="Close Overlay">×</span>
+        <div class="styleoverlay-content">
+            <div class="head">
+                <h4><a href="#">STYLE 2020</a></h4>
+            </div>
+            <div class="styleimage">
+                <img src="./images/circle.jpg" alt="">
+            </div>
+            <div class="col1">
+                <h3>MEN</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>WOMEN</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>BOYS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3>GIRLS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+            </div>
+            <div class="col5">
+                <h3>KIDS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="myproductOverlay" class="productoverlay">
+        <span class="closebtn" onclick="closeproduct()" title="Close Overlay">×</span>
+        <div class="productoverlay-content">
+            <div class="head">
+                <h4><a href="#">PRODUCTS</a></h4>
+            </div>
+            <div class="col1">
+                <h3>PAINTED SHIRT</h3>
+                <img src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">GIRLS TWEETY T-SHIRT</a></li>
+                    <li><a href="#">GIRLS DAISY T-SHIRT</a></li>
+                    <li><a href="#">SEQUIN FRONT T-SHIRT</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>CHECK SHIRT - MEN</h3>
+                <img src="./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">Plaid Shirt - Men</a></li>
+                    <li><a href="#">Cotton Linen Shirt</a></li>
+                    <li><a href="#">Oxford Shirt - Men</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>DENIM JACLET - BLUE</h3>
+                <img src="./images/mikail-duran-bsSpa9qpRo8-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">Stretch Skinny Fit Denim - Men</a></li>
+                    <li><a href="#">Stretch Skinny Fit Denim - Women</a></li>
+                    <li><a href="#">STRIPER DENIM</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3>LEATHER JACLET - BROWN</h3>
+                <img src="./images/5.jpg" alt="">
+                <ul>
+                    <li><a href="#">Leather Jacket - Black</a></li>
+                    <li><a href="#">Vintage Bikers Jacket</a></li>
+                </ul>
+            </div>
+            <div class="col5">
+                <h3>DENIM JACLET - BLUE</h3>
+                <img src="./images/mikail-duran-bsSpa9qpRo8-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">EMBROIDERED DENIM</a></li>
+                    <li><a href="#">STRETCH BLACK DENIM</a></li>
+                    <li><a href="#">LIGHT WASH STRETCH DENIM</a></li>
+                    <li><a href="#">WIDE LEG DENIM</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="myshopOverlay" class="shopoverlay">
+        <span class="closebtn" onclick="closeshop()" title="Close Overlay">×</span>
+        <div class="shopoverlay-content">
+            <div class="head">
+                <h4><a href="#">SHOP</a></h4>
+            </div>
+            <div class="col1">
+                <h3>DENIM</h3>
+                <ul>
+                    <li><a href="#">Slim Fit</a></li>
+                    <li><a href="#">Trending</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>CHINOS</h3>
+                <ul>
+                    <li><a href="#">Slim Fit</a></li>
+                    <li><a href="#">Baggie</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>SHORTS</h3>
+                <ul>
+                    <li><a href="#">Boxers</a></li>
+                    <li><a href="#">Gym Wear</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <ul>
+                    <li><a href="#"><img src="./images/ian-dooley-C6BrEIucDDU-unsplash.jpg" alt=""></a></li>
+                    <li><a href="#"><img src="./images/ian-dooley-WQR_1ORmg2I-unsplash.jpg" alt=""></a></li>
+                </ul>
+            </div>
+            <div class="col5">
+                <ul>
+                    <li><a href="#"><img src="./images/ian-dooley-8HqPXTToMn0-unsplash.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mylookbookOverlay" class="lookbookoverlay">
+        <span class="closebtn" onclick="closelookbook()" title="Close Overlay">×</span>
+        <div class="lookbookoverlay-content">
+            <div class="head">
+                <h4><a href="#">LOOKBOOK</a></h4>
+            </div>
+            <div class="col1">
+                <h3>HODDIE</h3>
+                <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+            </div>
+            <div class="col2">
+                <h3>JACKETS</h3>
+                <ul>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Bommer</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <h3>Woman</h3>
+                <ul>
+                    <li><a href="#">Shrug</a></li>
+                    <li><a href="#">Skirt</a></li>
+                </ul>
+            </div>
+            <div class="col4">
+                <h3 style="text-align: center;">FEATURED PRODUCTS</h3>
+                <img src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+                <h3 style="text-align: center;">BAGRATICA THEME</h3>
+                <p style="text-align: center;">Painted Shirt</p>
+                <ul>
+                    <li style="text-align: center;"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></li>
+                </ul>
+                <h3 style="text-align: center;">500</h3>
+                <h3 style="text-align: center;">SELECT OPTION</h3>
+            </div>
+            <div class="col5">
+                <ul>
+                    <li><a href="#"><img src="./images/sidebar-banner-img.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="mymsidebarOverlay" class="msidebaroverlay">
+        <span class="closebtn" onclick="closemobilesidebar()" title="Close Overlay">×</span>
+        <div class="msidebaroverlay-content">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">STYLE 2020 
+                    <i id="downicon" onclick="openstyle1()" style="float: right;" class="fa fa-angle-down sub-menu-icon"></i>
+                    <i id="upicon" onclick="closestyle1()" style="float: right; display: none;" class="fa fa-angle-up sub-menu-icon"></i>
+                </a></li>
+            </ul>
+            <div id="mobstyle" style="display: none;">
+                <h3>MEN</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+                <h3>WOMEN</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+                <h3>BOYS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+                <h3>GIRLS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+                <h3>KIDS</h3>
+                <ul>
+                    <li>T Shirts</li>
+                    <li>Casual Shirts</li>
+                </ul>
+                <div class="styleimage" style="margin:0 auto; text-align: center;">
+                    <img src="./images/circle.jpg" alt="">
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">PRODUCTS 
+                        <i id="downiconp" onclick="openproduct1()" style="float: right;" class="fa fa-angle-down sub-menu-icon"></i>
+                        <i id="upiconp" onclick="closeproduct1()" style="float: right; display: none;" class="fa fa-angle-up sub-menu-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div id="mobproduct" style="display: none;">
+                <h3>PAINTED SHIRT</h3>
+                <img src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">GIRLS TWEETY T-SHIRT</a></li>
+                    <li><a href="#">GIRLS DAISY T-SHIRT</a></li>
+                    <li><a href="#">SEQUIN FRONT T-SHIRT</a></li>
+                </ul>
+                <h3>CHECK SHIRT - MEN</h3>
+                <img src="./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">Plaid Shirt - Men</a></li>
+                    <li><a href="#">Cotton Linen Shirt</a></li>
+                    <li><a href="#">Oxford Shirt - Men</a></li>
+                </ul>
+                <h3>DENIM JACLET - BLUE</h3>
+                <img src="./images/mikail-duran-bsSpa9qpRo8-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">Stretch Skinny Fit Denim - Men</a></li>
+                    <li><a href="#">Stretch Skinny Fit Denim - Women</a></li>
+                    <li><a href="#">STRIPER DENIM</a></li>
+                </ul>
+                <h3>LEATHER JACLET - BROWN</h3>
+                <img src="./images/5.jpg" alt="">
+                <ul>
+                    <li><a href="#">Leather Jacket - Black</a></li>
+                    <li><a href="#">Vintage Bikers Jacket</a></li>
+                </ul>
+                <h3>DENIM JACLET - BLUE</h3>
+                <img src="./images/mikail-duran-bsSpa9qpRo8-unsplash.jpg" alt="">
+                <ul>
+                    <li><a href="#">EMBROIDERED DENIM</a></li>
+                    <li><a href="#">STRETCH BLACK DENIM</a></li>
+                    <li><a href="#">LIGHT WASH STRETCH DENIM</a></li>
+                    <li><a href="#">WIDE LEG DENIM</a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">SHOP 
+                        <i id="downicons" onclick="openshop1()" style="float: right;" class="fa fa-angle-down sub-menu-icon"></i>
+                        <i id="upicons" onclick="closeshop1()" style="float: right; display: none;" class="fa fa-angle-up sub-menu-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div id="mobshop" style="display: none;">
+                <h3>DENIM</h3>
+                <ul>
+                    <li><a href="#">Slim Fit</a></li>
+                    <li><a href="#">Trending</a></li>
+                </ul>
+                <h3>CHINOS</h3>
+                <ul>
+                    <li><a href="#">Slim Fit</a></li>
+                    <li><a href="#">Baggie</a></li>
+                </ul>
+                <h3>SHORTS</h3>
+                <ul>
+                    <li><a href="#">Boxers</a></li>
+                    <li><a href="#">Gym Wear</a></li>
+                </ul>
+                <img src="./images/ian-dooley-C6BrEIucDDU-unsplash.jpg" alt="">
+                <img src="./images/ian-dooley-WQR_1ORmg2I-unsplash.jpg" alt="">
+                <img src="./images/ian-dooley-8HqPXTToMn0-unsplash.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="#">LOOKBOOK 
+                        <i id="downiconl" onclick="openlookbook1()" style="float: right;" class="fa fa-angle-down sub-menu-icon"></i>
+                        <i id="upiconl" onclick="closelookbook1()" style="float: right; display: none;" class="fa fa-angle-up sub-menu-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <div id="moblookbook" style="display: none;">
+                <h3>HODDIE</h3>
+                <ul>
+                    <li><a href="#">Boys</a></li>
+                    <li><a href="#">Kids</a></li>
+                </ul>
+                <h3>JACKETS</h3>
+                <ul>
+                    <li><a href="#">Denim</a></li>
+                    <li><a href="#">Bommer</a></li>
+                </ul>
+                <h3>Woman</h3>
+                <ul>
+                    <li><a href="#">Shrug</a></li>
+                    <li><a href="#">Skirt</a></li>
+                </ul>
+                <h3 style="text-align: center;">FEATURED PRODUCTS</h3>
+                <img src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+                <h3 style="text-align: center;">BAGRATICA THEME</h3>
+                <p style="text-align: center;">Painted Shirt</p>
+                <ul>
+                    <li style="text-align: center;"><i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i></li>
+                </ul>
+                <h3 style="text-align: center;">500</h3>
+                <h3 style="text-align: center;">SELECT OPTION</h3>
+                <ul>
+                    <li><a href="#"><img src="./images/sidebar-banner-img.png" alt=""></a></li>
+                </ul>
+            </div>
+            <ul>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="myuserOverlay" class="useroverlay">
+        <div class="useroverlay-content">
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">My Wishlist</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="mymcartOverlay" class="mcartoverlay">
+        <div class="mcartoverlay-content">
+            <div class="cartmsg">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="cart2">
+                <a href="#">CONTINUE SHOPPING</a> 
+            </div>
+        </div>
+    </div>
+
+    <div id="mydropdownOverlay" class="dropdownoverlay">
+        <div class="dropdownoverlay-content">
+            <div class="language">
+                <h4>LANGUAGE:</h4>
+                <ul>
+                    <li>English</li>
+                    <li>Germany</li>
+                </ul>
+            </div>
+            <div class="currency">
+                <h4>CURRENCY:</h4>
+                <ul>
+                    <li>USD</li> 
+                    <li>liEUR</li>
+                    <li>TRY</li>
+                    <li>CAD</li>
+                    <li>JPY</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    
+    <div class="header">
+        <div class="dropdown">
+            <select name="lang" id="lang">
+                <option value="">English</option>
+                <option value="">Germany</option>
+            </select>
+            <select name="c" id="c">
+                <option value="">USD</option>
+                <option value="">EUR</option>
+                <option value="">TRY</option>
+                <option value="">CAD</option>
+                <option value="">JPY</option>
+            </select>
+        </div>
+        <div class="msg">
+            MID-SEASON SALE UP TO 70% OFF. USE CODE: “SALE70”
+        </div>
+        <div class="nav">
+            <div class="menu1">
+                <a href="#">HOME</a>
+                <a href="#" onclick="openstyle()">STYLE 2020<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openproduct()">PRODUCTS<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openshop()">SHOP<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#" onclick="openlookbook()">LOOKBOOK<i
+                        style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                        class="fa fa-angle-right sub-menu-icon"></i></a>
+                <a href="#">BLOG</a>
+                <a href="#">FAQ</a>
+                <a href="#">ABOUT</a>
+                <a href="#">CONTACT</a>
+            </div>
+        </div>
+    </div>
+    <div class="wrappar">
+        <header>
+            <nav>
+                <label for="toggle" id="tog">&#9776;</label>
+                <input onclick="mytoggle()" type="checkbox" id="toggle" />
+                <div class="menu2">
+                    <a href="#" style="margin-top: 20px;">HOME</a>
+                    <a href="#" onclick="openstyle()">STYLE 2020<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openproduct()">PRODUCTS<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openshop()">SHOP<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#" onclick="openlookbook()">LOOKBOOK<i
+                            style="margin-left: 9px; margin-top: 9px; font-size: 11px; font-weight: 500;"
+                            class="fa fa-angle-right sub-menu-icon"></i></a>
+                    <a href="#">BLOG</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <div class="logo"><img id="logo" src="./images/logo.png" alt=""></div>
+                <div class="menu">
+                    <ul>
+                        <li><a class="openBtn" onclick="openSearch()" ondblclick="closeSearch()"><i class="fas fa-search"></i></a></li>
+                        <li><a href="">LOGIN</a></li>
+                        <li><a href="">REGISTER</a></li>
+                        <li><a href="">MY WISHLIST</a></li>
+                        <li><a onclick="openCart()" ondblclick="closeCart()">CART<span class="badge">0</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="header-content">
+                <div class="heading">
+                    <h1>SPRING SUMMER</h1>
+                </div>
+                <div class="detail">
+                    <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                </div>
+
+                <div class="button">
+                    <a href="#" style="margin-left:auto;">
+                        Shop The Collection
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <div class="mobileheader">
+        <div class="hrow">
+            <div class="h1c">
+                <a href="#" onclick="openmobilesidebar()"><i class="fal fa-bars"></i></a>
+                <!-- <input onclick="mytoggle()" type="checkbox" id="toggle" /> -->
+            </div>
+            <div class="h1c">
+                <a href="#" onclick="openmobileuser()" ondblclick="closemobileuser()"><i class="fal fa-user"></i></a>
+                <!-- <input onclick="mytoggle()" type="checkbox" id="toggle" /> -->
+            </div>
+            <div class="h1c">
+                <a href="#" onclick="openmobiledropdown()" ondblclick="closemobiledropdown()">USD <i style="float: right;" class="fa fa-angle-down sub-menu-icon"></i></a>
+                <!-- <input onclick="mytoggle()" type="checkbox" id="toggle" /> -->
+            </div>
+            <div class="h1c">
+                <a href="#" onclick="openmobilecart()" ondblclick="closemobilecart()"><i class="fal fa-shopping-bag"></i></a>
+                <!-- <input onclick="mytoggle()" type="checkbox" id="toggle" /> -->
+            </div>
+        </div>
+        <div class="moblogo">
+            <img id="logo" src="./images/logo-black.png" alt="">
+        </div>
+        <div class="search">
+            <input class="searchbox" type="text" placeholder="Search" name="q">
+            <button type="button" class="searchbtn"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <div class="pi">
+            <div class="header-content2">
+                <div class="heading">
+                    <h1>SPRING SUMMER</h1>
+                </div>
+                <div class="detail">
+                    <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                </div>
+
+                <div class="button">
+                    <a href="#" style="margin-left:auto;">
+                        Shop The Collection
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="model">
+        <div class="forher">
+            <div class="banner">
+                <h2>SHOP FOR HER</h2>
+                <div class="text">
+                    <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+                </div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+        <div class="forhim">
+            <div class="banner">
+                <h2>SHOP FOR HER</h2>
+                <div class="text">
+                    <p>DOBORTIS SCELERISQUE BLANDIT LOREM COSMOPOLIS</p>
+                </div>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <div class="parallax"></div>
+        <div class="banner">
+            <div class="heading1">
+                COSMOPOLITAN
+            </div>
+            <h2>#TRENDING NOW</h2>
+            <div class="text">
+                <p>DOBORTIS SCELERISQUE BLANDIT COSMOPOLIS DE LOREMOUS<br>DELIS ELEMENTUM TRISTIQUE CONSECTETUR QUAM
+                    URNA VEHICULA LACUS NEC FERMENTUM.</p>
+            </div>
+
+            <a href="" class="btn">shop now</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <div class="textarea">
+                <p>FREE SHIPPING WORLDWIDE. NO MINIMUM</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="textarea" style="color: #e95144">
+                <p>20% OFF YOUR FIRST ORDER</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="textarea">
+                <p>SECURE CHECKOUT GUARANTEE</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="title">
+        <h2 style="margin-bottom: 20px;">Featured Products</h2>
+    </div>
+    <div class="collecton">
+        <div class="prow">
+            <img id="pimg" onmouseover="newImg()" onmouseout="oldImg()" src="./images/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="quick">
+                <a href="#">Quick View</a> 
+            </div>
+            <div class="pdetail">
+                <h3>LEATHER JACKET FOR GIRLS - BLACK</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $20.00
+                    </div>
+                    <div class="newprice">
+                        $1,200.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img class="pimg" id="pimg1" onmouseover="newImg1()" onmouseout="oldImg1()" src="./images/5.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="quick">
+                <a href="#">Quick View</a> 
+            </div>
+            <div class="pdetail">
+                <h3>LEATHER JACKET - BROWN</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $5.00
+                    </div>
+                    <div class="newprice">
+                        $2.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img id="pimg2" onmouseover="newImg2()" onmouseout="oldImg2()" src="./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="quick">
+                <a href="#">Quick View</a> 
+            </div>
+            <div class="pdetail">
+                <h3>CHECK SHIRT - MEN</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $20.00
+                    </div>
+                    <div class="newprice">
+                        $1,200.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+        <div class="prow">
+            <img id="pimg3" onmouseover="newImg3()" onmouseout="oldImg3()" src="./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg" alt="">
+            <div class="hot">
+                <a href="#">HOT</a>
+            </div>
+            <div class="quick">
+                <a href="#">Quick View</a> 
+            </div>
+            <div class="pdetail">
+                <h3>PAINTED SHIRT</h3>
+                <p>Dosuere an morci lobortis scelerisque blandit cosmopolis de metropolitan.</p>
+                <span class="stars" style="margin-top: 10%;">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </span>
+                <div class="price">
+                    <div class="oldprice">
+                        $10.00
+                    </div>
+                    <div class="newprice">
+                        $5.00
+                    </div>
+                </div>
+                <div class="action">
+                    <a href="#">Select options</a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="title">
+        <a href="#">Show More</a> 
+    </div>
+
+    <div class="title">
+        <h2>TOP BRANDS</h2>
+        <p>Naminos condimentum dui id enim selementum de tincidunts cosmo de lorem metropolis</p>
+    </div>
+
+    <div class="slick slider">
+        <div class="simg">
+            <img src="./images/logo/brand-logo1.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo2.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo3.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo4.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo5.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo1.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo2.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo3.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo4.png" alt="">
+        </div>
+        <div class="simg">
+            <img src="./images/logo/brand-logo5.png" alt="">
+        </div>
+    </div>
+
+    <div class="share" style="background-color: #F3F3F3;">
+        <div class="title"style="padding: 5px;">
+            <h2>#THE BAGRATICA ON INSTAGRAM</h2>
+            <p>DISCOVER AND SHARE YOUR BAGRATICA MOMENTS WITH US!</p>
+        </div>
+    
+        <div class="slick slider2">
+            <div class="simg2">
+                <img src="./images/himanshu-dewangan-zf53zxL5-6Y-unsplash.jpg" alt="">
+            </div>
+            <div class="simg2">
+                <img src="./images/5 (1).jpg" alt="">
+            </div>
+            <div class="simg2">
+                <img src="./images/himanshu-dewangan-SnSUXYAlLZg-unsplash.jpg" alt="">
+            </div>
+            <div class="simg2">
+                <img src="./images/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg" alt="">
+            </div>
+        </div>    
+    </div>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                <h3>NEWSLETTER SIGNUP</h3>
+                <div class="des">
+                    <span>Receive our latest updates about our products and promotions.</span>
+                </div>
+                <center>
+                    <div class="newsletter">
+                        <input class="input" placeholder="Email address" type="email" >
+                        <button style="background-color: #282828;border: none;">
+                            <i class="arrow fa fa-long-arrow-right"></i>
+                        </button>
+                    </div>
+                </center>
+            </div>
+            <div style="display:flex; flex-wrap:wrap; width:100%; justify-content:space-around;">
+                <div>
+                    <h3 class="link">SHOP</h3>
+                    <ul class="text">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Collections</a>
+                        </li>
+                        <li>
+                            <a href="">Shop</a>
+                        </li>
+                        <li>
+                            <a href="">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="">LookBook</a>
+                        </li>
+                        <li>
+                            <a href="">#Trend</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="link">FOOTER MENU</h3>
+                    <ul class="text">
+                        <li>
+                            <a href="">About</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">All Collections</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="link">SHOP</h3>
+                    <ul class="text">
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Collections</a>
+                        </li>
+                        <li>
+                            <a href="">Shop</a>
+                        </li>
+                        <li>
+                            <a href="">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="">LookBook</a>
+                        </li>
+                        <li>
+                            <a href="">#Trend</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="link">MAIN MENU</h3>
+                    <ul class="text">
+                        <li>
+                            <a href="">Login</a>
+                        </li>
+                        <li>
+                            <a href="">Register</a>
+                        </li>
+                        <li>
+                            <a href="">My Whishlist</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="link">STAY CONNECTED</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-pinterest"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-tumblr"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                        </li>
+                        <div style="padding-top: 20px;">
+                            <span>
+                                LIKE US
+                                <i>On</i>
+                                FACEBOOK
+                            </span>
+                        </div>
+                        <a href="" >
+                            <img style="padding-top: 20px;" src="./images/fb.png" alt="">
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <p class="fotter-bottom">
+                © 2021 
+                <a href="">BAGRATICA THEME</a>
+                DEMO. ECOMMERCE SOFTWARE
+                <a href="">POWERED BY SHOPIFY</a>
+                .
+                <br>
+                SHOPIFY THEMES & TEMPLATES BY
+                <a href="">HALOTHEMES.COM</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(window).scrollTop()) {
+                $("nav").addClass("white");
+                // $(".menu1").addClass("white");
+                closeCart();
+                closemobileuser();
+                closemobiledropdown();
+                closemobilecart();
+                document.getElementById("logo").src = "./images/logo-black.png";
+            }
+            else {
+                $("nav").removeClass("white");
+                // $(".menu1").removeClass("white");
+                document.getElementById("logo").src = "./images/logo.png";
+            }
+        })
+        function mytoggle() {
+            var x = document.getElementById("toggle").checked;
+            if (x == true) {
+                document.getElementById("tog").innerHTML = '&#9932;';
+            }
+            else {
+                document.getElementById("tog").innerHTML = '&#9776;';
+            }
+        }
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+        function openNavc() {
+            document.getElementById("myNavc").style.width = "100%";
+        }
+
+        function newImg() {
+            document.getElementById("pimg").src = "./images/1_930d721b-89c5-4317-8654-ccf075bb7924.jpg";
+            document.getElementById("prow").addClass("hov"); 
+        }
+
+        function oldImg() {
+            document.getElementById("pimg").src = "./images/3_1bd8fb66-f20a-40d4-82fe-0cc507e37434.jpg";
+        }
+
+        function newImg1() {
+            document.getElementById("pimg1").src = "./images/1.jpg";
+        }
+
+        function oldImg1() {
+            document.getElementById("pimg1").src = "./images/5.jpg";
+        }
+
+        function newImg2() {
+            document.getElementById("pimg2").src = "./images/himanshu-dewangan-SnSUXYAlLZg-unsplash.jpg";
+        }
+
+        function oldImg2() {
+            document.getElementById("pimg2").src = "./images/himanshu-dewangan-k9tUQNeOfx0-unsplash.jpg";
+        }
+
+        function newImg3() {
+            document.getElementById("pimg3").src = "./images/himanshu-dewangan-dGiap4wWuMY-unsplash.jpg";
+        }
+
+        function oldImg3() {
+            document.getElementById("pimg3").src = "./images/himanshu-dewangan-3vy8JquXGsA-unsplash.jpg";
+        }
+
+        function openSearch() {
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function closeSearch() {
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        function openCart() {
+            document.getElementById("mycartOverlay").style.display = "block";
+        }
+
+        function closeCart() {
+            document.getElementById("mycartOverlay").style.display = "none";
+        }
+
+        function openstyle() {
+            document.getElementById("mystyleOverlay").style.display = "block";
+            document.body.style.overflow="hidden";
+        }
+
+        function closestyle() {
+            document.getElementById("mystyleOverlay").style.display = "none";
+        }
+        function openproduct() {
+            document.getElementById("myproductOverlay").style.display = "block";
+            document.body.style.overflow="hidden";
+        }
+
+        function closeproduct() {
+            document.getElementById("myproductOverlay").style.display = "none";
+        }
+        function openshop() {
+            document.getElementById("myshopOverlay").style.display = "block";
+            document.body.style.overflow="hidden";
+        }
+
+        function closeshop() {
+            document.getElementById("myshopOverlay").style.display = "none";
+        }
+        function openlookbook() {
+            document.getElementById("mylookbookOverlay").style.display = "block";
+            document.body.style.overflow="hidden";
+        }
+
+        function closelookbook() {
+            document.getElementById("mylookbookOverlay").style.display = "none";
+        }
+
+        function openmobilesidebar() {
+            document.getElementById("mymsidebarOverlay").style.display = "block";
+            document.body.style.overflow="hidden";
+        }
+
+        function closemobilesidebar() {
+            document.getElementById("mymsidebarOverlay").style.display = "none";
+        }
+
+        function openmobileuser() {
+            document.getElementById("myuserOverlay").style.display = "block";
+        }
+
+        function closemobileuser() {
+            document.getElementById("myuserOverlay").style.display = "none";
+        }
+
+        function openmobiledropdown() {
+            document.getElementById("mydropdownOverlay").style.display = "block";
+        }
+
+        function closemobiledropdown() {
+            document.getElementById("mydropdownOverlay").style.display = "none";
+        }
+
+        function openmobilecart() {
+            document.getElementById("mymcartOverlay").style.display = "block";
+        }
+
+        function closemobilecart() {
+            document.getElementById("mymcartOverlay").style.display = "none";
+        }
+
+        function openstyle1() {
+            document.getElementById("mobstyle").style.display = "block";
+            document.getElementById("downicon").style.display = "none";
+            document.getElementById("upicon").style.display = "block";
+        }
+
+        function closestyle1() {
+            document.getElementById("mobstyle").style.display = "none";
+            document.getElementById("downicon").style.display = "block";
+            document.getElementById("upicon").style.display = "none";
+        }
+
+        function openproduct1() {
+            document.getElementById("mobproduct").style.display = "block";
+            document.getElementById("downiconp").style.display = "none";
+            document.getElementById("upiconp").style.display = "block";
+        }
+
+        function closeproduct1() {
+            document.getElementById("mobproduct").style.display = "none";
+            document.getElementById("downiconp").style.display = "block";
+            document.getElementById("upiconp").style.display = "none";
+        }
+
+        function openshop1() {
+            document.getElementById("mobshop").style.display = "block";
+            document.getElementById("downicons").style.display = "none";
+            document.getElementById("upicons").style.display = "block";
+        }
+
+        function closeshop1() {
+            document.getElementById("mobshop").style.display = "none";
+            document.getElementById("downicons").style.display = "block";
+            document.getElementById("upicons").style.display = "none";
+        }
+
+        function openlookbook1() {
+            document.getElementById("moblookbook").style.display = "block";
+            document.getElementById("downiconl").style.display = "none";
+            document.getElementById("upiconl").style.display = "block";
+        }
+
+        function closelookbook1() {
+            document.getElementById("moblookbook").style.display = "none";
+            document.getElementById("downiconl").style.display = "block";
+            document.getElementById("upiconl").style.display = "none";
+        }
+
+        $('.slider').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [
+            {
+            breakpoint: 1020,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                infinite: true,
+                dots: true,
+                arrows: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+
+        $('.slider2').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [
+            {
+            breakpoint: 1020,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                dots: true,
+                arrows: true
+            }
+            },
+            {
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: true
+            }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+        });
+    </script>
+</body>
+
+</html>

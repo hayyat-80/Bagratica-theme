@@ -1,0 +1,580 @@
+.overlay {
+  height: auto;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  background-color: #808080;
+}
+
+.overlay-content {
+  position: relative;
+  top: 36%;
+  width: 80%;
+  text-align: center;
+  margin: 20px;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.overlay .closebtn:hover {
+  color: #ccc;
+}
+
+.overlay input::placeholder{
+  color: white;
+}
+.overlay input[type=text] {
+  display: block;
+  width: 50%;
+  height: 20px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: white;
+  background-color: #808080;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  margin: 5px auto 20px;
+}
+
+/* cart */
+.cartoverlay {
+  height: 17%;
+  width: 25%;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 23%;
+  right: 4%;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.cartoverlay-content {
+  position: relative;
+  top: 16%;
+  text-align: left;
+}
+.cartoverlay-content p{
+  position: absolute;
+  top: 0;
+  left: 15px;
+}
+.cart a{
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.cart a:hover{
+  background-color: black;
+  color: white; 
+}
+
+
+/* style */
+.styleoverlay, .productoverlay, .shopoverlay, .lookbookoverlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  overflow:scroll;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255, 0.9);
+}
+
+.styleoverlay-content, .productoverlay-content, .shopoverlay-content, .lookbookoverlay-content {
+  position: relative;
+}
+
+.styleoverlay .closebtn, .productoverlay .closebtn, .shopoverlay .closebtn, .lookbookoverlay .closebtn{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 50px;
+  cursor: pointer;
+  color: #FBC500;
+}
+
+
+
+.msidebaroverlay{
+  height: 100%;
+  width: 90%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow:scroll;
+  background-color: rgb(255,255,255);
+}
+
+.msidebaroverlay-content {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.msidebaroverlay-content li{
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: black;
+  border-bottom: 1px solid #e5e5e5;
+  list-style-type: none;
+  margin: -1px 0 0 0;
+  padding: 12px 20px;
+}
+
+.msidebaroverlay-content li a{
+  color: black;
+  text-decoration: none;
+}
+
+.msidebaroverlay .closebtn{
+  position: absolute;
+  padding: 6px;
+  top: 0;
+  right: 1%;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 9999;
+  color: #FFC800;
+}
+
+
+
+.useroverlay{
+  height: auto;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  left: 0;
+  background-color: rgb(255,255,255);
+}
+
+.useroverlay-content {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  margin: auto;
+}
+
+.useroverlay-content li{
+  display: block;
+  font-size: 12px;
+  color: black;
+  list-style-type: none;
+  margin: -1px 0 0 0;
+  padding: 12px 20px;
+}
+
+.useroverlay-content li a{
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+.mcartoverlay{
+  height: 40%;
+  width: 70%;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 32%;
+  right: 0px;
+  background-color: rgb(255,255,255);
+}
+
+.mcartoverlay-content {
+  /* text-align: left; */
+  width: 100%;
+  margin-top: 30px;
+}
+
+.mcartoverlay-content .cartmsg{
+  margin: 20px;
+}
+
+.mcartoverlay-content .cartmsg p{
+  font-size: 12px;
+}
+
+.mcartoverlay-content .cart2 a{
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: bolder;
+  margin: 20px;
+}
+
+.mcartoverlay-content .cart2 a:hover{
+  background-color: black;
+  color: white; 
+}
+
+
+.styleoverlay-content h4{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: black;
+}
+
+.styleoverlay-content div img{
+  border-radius: 100%;
+}
+
+
+.dropdownoverlay{
+  height: auto;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 30%;
+  left: 0;
+  background-color: rgb(255,255,255);
+}
+
+.dropdownoverlay-content {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  margin-top: 30px;
+  margin: auto;
+  display: flex;
+}
+
+.language, .currency{
+  flex: 1;
+  margin: 20px;
+}
+
+.language h4,.currency h4{
+  font-weight: bold;
+}
+
+.language li,.currency li{
+  display: block;
+  font-size: 13px;
+  color: black;
+  list-style-type: none;
+  margin: -1px 0 0 0;
+  padding: 12px 20px;
+}
+
+
+.styleoverlay-content h4,
+.productoverlay-content h4,
+.shopoverlay-content h4,
+.lookbookoverlay-content h4{
+  position: absolute;
+  margin-top: 5%;
+  left: 40%;
+  letter-spacing: 6px;
+  font-weight: 600;
+  margin-bottom: 92px;
+  font-size: 40px;
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 10px;
+  width: 23%;
+}
+
+.styleoverlay-content h4 a, 
+.productoverlay-content h4 a,
+.shopoverlay-content h4 a,
+.lookbookoverlay-content h4 a{
+  text-decoration: underline;
+  color: #000;
+
+}
+
+.styleoverlay-content .styleimage{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  margin-top: 15%;
+  margin-left: 8%;
+}
+
+.styleoverlay-content .col1{
+  position: absolute;
+  margin-top: 15%;
+  margin-left: 45%;
+}
+
+.styleoverlay-content .col2{
+  position: absolute;
+  margin-top: 15%;
+  left: 65%;
+}
+.styleoverlay-content .col3{
+  position: absolute;
+  margin-top: 15%;
+  left: 85%;
+}
+
+.styleoverlay-content .col4{
+  position: absolute;
+  margin-top: 25%;
+  left: 45%;
+}
+.styleoverlay-content .col5{
+  position: absolute;
+  margin-top: 25%;
+  left: 65%;
+}
+
+.styleoverlay-content .col1 h3,
+.styleoverlay-content .col2 h3,
+.styleoverlay-content .col3 h3,
+.styleoverlay-content .col4 h3,
+.styleoverlay-content .col5 h3{
+    margin: 20px;
+}
+
+.styleoverlay-content .col1 ul li,
+.styleoverlay-content .col2 ul li,
+.styleoverlay-content .col3 ul li,
+.styleoverlay-content .col4 ul li,
+.styleoverlay-content .col5 ul li{
+    margin: 20px;
+    list-style-type: none;
+}
+
+
+/* PRODUCTS + SHOP + Lookbook*/
+.productoverlay-content .col1{
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 0%;
+  width: 18%;
+}
+
+.shopoverlay-content .col1,
+.lookbookoverlay-content .col1{
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 10%;
+  width: 18%;
+}
+
+.productoverlay-content .col2{
+  position: absolute;
+  margin-top: 13%;
+  left: 20%;
+  width: 18%;
+}
+
+.shopoverlay-content .col2,
+.lookbookoverlay-content .col2{
+  position: absolute;
+  margin-top: 13%;
+  left: 25%;
+  width: 18%;
+}
+
+.productoverlay-content .col3,
+.shopoverlay-content .col3,
+.lookbookoverlay-content .col3{
+  position: absolute;
+  margin-top: 13%;
+  left: 40%;
+  width: 18%;
+}
+
+.productoverlay-content .col4{
+  position: absolute;
+  margin-top: 13%;
+  left: 60%;
+  width: 18%;
+}
+
+.shopoverlay-content .col4{
+  position: absolute;
+  margin-top: 13%;
+  left: 55%;
+  width: 22%;
+}
+
+.lookbookoverlay-content .col4{
+  position: absolute;
+  margin-top: 13%;
+  left: 55%;
+  width: 20%;
+}
+
+.productoverlay-content .col5{
+  position: absolute;
+  margin-top: 13%;
+  left: 80%;
+  width: 20%;
+}
+
+.shopoverlay-content .col5,
+.lookbookoverlay-content .col5{
+  position: absolute;
+  margin-top: 13%;
+  left: 75%;
+  width: 23%;
+}
+
+.productoverlay-content .col1 h3,
+.productoverlay-content .col2 h3,
+.productoverlay-content .col3 h3,
+.productoverlay-content .col4 h3,
+.productoverlay-content .col5 h3,
+.shopoverlay-content .col1 h3,
+.shopoverlay-content .col2 h3,
+.shopoverlay-content .col3 h3,
+.shopoverlay-content .col4 h3,
+.shopoverlay-content .col5 h3,
+.lookbookoverlay-content .col1 h3,
+.lookbookoverlay-content .col2 h3,
+.lookbookoverlay-content .col3 h3,
+.lookbookoverlay-content .col4 h3,
+.lookbookoverlay-content .col5 h3{
+    margin: 10px;
+}
+
+.productoverlay-content .col1 img,
+.productoverlay-content .col2 img,
+.productoverlay-content .col3 img,
+.productoverlay-content .col4 img,
+.productoverlay-content .col5 img,
+.shopoverlay-content .col4 img,
+.shopoverlay-content .col5 img,
+.lookbookoverlay-content .col4 img,
+.lookbookoverlay-content .col5 img{
+    width: 100%;
+    height: 100%;
+}
+
+.productoverlay-content .col1 ul li,
+.productoverlay-content .col2 ul li,
+.productoverlay-content .col3 ul li,
+.productoverlay-content .col4 ul li,
+.productoverlay-content .col5 ul li,
+.shopoverlay-content .col1 ul li,
+.shopoverlay-content .col2 ul li,
+.shopoverlay-content .col3 ul li,
+.shopoverlay-content .col4 ul li,
+.shopoverlay-content .col5 ul li,
+.lookbookoverlay-content .col1 ul li,
+.lookbookoverlay-content .col2 ul li,
+.lookbookoverlay-content .col3 ul li,
+.lookbookoverlay-content .col4 ul li,
+.lookbookoverlay-content .col5 ul li{
+    margin: 20px;
+    list-style-type: none;
+}
+
+.productoverlay-content .col1 ul li a,
+.productoverlay-content .col2 ul li a,
+.productoverlay-content .col3 ul li a,
+.productoverlay-content .col4 ul li a,
+.productoverlay-content .col5 ul li a,
+.shopoverlay-content .col1 ul li a,
+.shopoverlay-content .col2 ul li a,
+.shopoverlay-content .col3 ul li a,
+.shopoverlay-content .col4 ul li a,
+.shopoverlay-content .col5 ul li a,
+.lookbookoverlay-content .col1 ul li a,
+.lookbookoverlay-content .col2 ul li a,
+.lookbookoverlay-content .col3 ul li a,
+.lookbookoverlay-content .col4 ul li a,
+.lookbookoverlay-content .col5 ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.productoverlay-content .col1 ul li a:hover,
+.productoverlay-content .col2 ul li a:hover,
+.productoverlay-content .col3 ul li a:hover, 
+.productoverlay-content .col4 ul li a:hover,
+.productoverlay-content .col5 ul li a:hover,
+.shopoverlay-content .col1 ul li a:hover,
+.shopoverlay-content .col2 ul li a:hover,
+.shopoverlay-content .col3 ul li a:hover,
+.lookbookoverlay-content .col1 ul li a:hover,
+.lookbookoverlay-content .col2 ul li a:hover,
+.lookbookoverlay-content .col3 ul li a:hover{
+    border-bottom: 1px dotted black;
+}
+
+/* mobile style */
+#mobstyle h3,
+#mobproduct h3,
+#mobshop h3,
+#moblookbook h3{
+  margin: 20px;
+}
+
+#mobstyle ul li,
+#mobproduct ul li,
+#mobshop ul li,
+#moblookbook ul li{
+  font-weight: lighter;
+  border: none;
+}
+
+#mobstyle img{
+  width: 50%;
+  height: 50%;
+}
+
+#mobproduct img,
+#mobshop img,
+#moblookbook img{
+  width: 90%;
+  height: 100%;
+  margin-left: 15px;
+}
+
+@media (min-width:1020px) and (max-width:1600px){
+  .styleoverlay, .productoverlay, .shopoverlay, .lookbookoverlay, .msidebaroverlay, .useroverlay, .mcartoverlay, .dropdownoverlay{
+    display: none;
+  } 
+}
+
+@media (min-width: 375px) and (max-width){
+  .overlay, .cartoverlay{
+    display: none;
+  }
+}
